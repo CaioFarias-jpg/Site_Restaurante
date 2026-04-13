@@ -89,4 +89,10 @@
     .descrição{
         font-size: 2rem;
     }
+    .cta-buttons{
+        flex-direction: column;
+    }
+    .cta-buttons a{
+        justify-content: center;
+    }
 }
