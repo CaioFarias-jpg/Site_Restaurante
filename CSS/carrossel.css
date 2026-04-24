@@ -1,0 +1,70 @@
+.area-carrossel{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.track{
+    display: flex;
+    width: max-content;
+    animation: carrossel 10s linear infinite;
+}
+
+.track img{
+    height: 300px;
+    width: 300px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+@keyframes carrossel{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1280px);
+    }
+    
+}
+
+.area-carrossel-principal{
+    position: relative;
+    width: 100%;
+    height: 90hv;
+    overflow: hidden;
+}
+
+.carrossel-principal{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide{
+    min-width: 100%;
+    height: 90vh;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.area-carrossel-principal button{
+    z-index: 2;
+    position: absolute;
+    color: aliceblue;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    background-color: var(--color-primary-6);
+    border: none;
+}
+
+.area-carrossel-principal button:first-of-type{
+    left: 20px;
+}
+
+.area-carrossel-principal button:last-of-type{
+    right: 20px;
+}
